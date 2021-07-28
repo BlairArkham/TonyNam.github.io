@@ -2,10 +2,10 @@ import requests
 #import os
 from datetime import datetime
 
-api_key = '014a5e7c8599982d827329f2d8d7d081'
+api_key = '87d845b0b6cf29baa1a73cc34b067a95'
 location = input("Enter the town name: ")
 
-complete_api_link = "https://home.openweathermap.org/api_keys"+location+"&appid="+api_key
+complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+api_key
 api_link = requests.get(complete_api_link)
 api_data = api_link.json()
 
@@ -28,7 +28,7 @@ print ("Current wind speed    :",wind_spd ,'kmph')
 print("====================================================")
 
 
-#making a list so that i can print the info to a txt
+# making a list so that i can print the info to a txt 
 txtlist = [temp_city,weather_desc,hmdt,wind_spd,date_time]
 #using open() buit-in function to write to a text file
 with open("textfile.txt" , mode= 'w' ,encoding= 'utf-8') as f :     
@@ -42,6 +42,5 @@ with open("textfile.txt" , mode= 'w' ,encoding= 'utf-8') as f :
     f.write("{},{},{} \n".format("Current Humidity      :",txtlist[2],"%"))
     f.write("{},{},{} \n".format("Current wind speed    :",txtlist[3],"kmph"))
     f.write("====================================================")
-    
 
     
