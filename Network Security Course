@@ -1,0 +1,35 @@
+Term
+
+Definition
+
+VPN
+
+The Cisco ISR is secured. It protects data in motion that is flowing from the CAN to the outside world by establishing Virtual Private Networks (VPNs). VPNs ensure data confidentiality and integrity from authenticated sources.
+
+ASA Firewall
+
+A Cisco Adaptive Security Appliance (ASA) firewall performs stateful packet filtering to filter return traffic from the outside network into the campus network.
+
+IPS
+
+A Cisco Intrusion Prevention System (IPS) device continuously monitors incoming and outgoing network traffic for malicious activity. It logs information about the activity, and attempts to block and report it.
+
+Layer 3 Switches
+
+These distribution layer switches are secured and provide secure redundant trunk connections to the Layer 2 switches. Several different security features can be implemented, such as ACLs, DHCP snooping, Dynamic ARP Inspection (DAI), and IP source guard.
+
+Layer 2 Switches
+
+These access layer switches are secured and connect user-facing ports to the network. Several different security features can be implemented, such as port security, DHCP snooping, and 802.1X user authentication.
+
+ESA/WSA
+
+A Cisco Email Security Appliance (ESA) and Web Security Appliance (WSA) provide advanced threat defense, application visibility and control, reporting, and secure mobility to secure and control email and web traffic.
+
+AAA Server
+
+An authentication, authorization, and accounting (AAA) server authenticates users, authorizes what they are allowed to do, and tracks what they are doing.
+
+Hosts
+
+End points are secured using various features including antivirus and antimalware software, Host Intrusion Protection System features, and 802.1X authentication features.
